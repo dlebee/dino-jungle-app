@@ -1,0 +1,24 @@
+# Godot caches and exports
+godot/.godot/
+godot/build/
+godot/android/
+*.tmp
+.DS_Store
+
+# Your own devices (copy scripts/devices.env.example)
+scripts/devices.env
+
+# Raw CC0 downloads: big archives, re-downloadable from the URLs in assets-src/CREDITS.md.
+# The game itself only needs godot/assets/.
+assets-src/*
+!assets-src/CREDITS.md
+!assets-src/maps/
+assets-src/maps/*.blend1
+
+# The Space Mission helicopter is a supplied model with no stated licence: kept local only.
+# Without it the game flies the CC0 helicopter (helicopter_cc0.glb).
+godot/assets/models/helicopter.glb
+godot/assets/models/helicopter.glb.import
+godot/assets/models/helicopter_base_color.jpg*
+godot/assets/models/helicopter_metallic_roughness.jpg*
+godot/assets/models/helicopter_normal.jpg*
